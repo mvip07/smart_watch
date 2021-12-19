@@ -1,0 +1,119 @@
+.watch-img {
+    @media (max-width: 1366px) {
+        img {
+            width: 450px;
+            height: 350px;
+        }
+    }
+
+    @media (max-width: 490px) {
+        img {
+            width: 400px;
+            height: 300px;
+        }
+    }
+
+    @media (max-width: 420px) {
+        img {
+            width: 300px;
+            height: 200px;
+        }
+    }
+}
+
+.section-4 {
+    padding: 85px 220px;
+
+    @media (max-width: 1200px) {
+        padding: 70px 100px;
+    }
+
+    @media (max-width: 1085px) {
+        padding: 60px 70px;
+    }
+
+    @media (max-width: 1026px) {
+        padding: 40px 50px;
+    }
+
+    @media (max-width: 992px) {
+        padding: 30px 20px;
+    }
+
+    .title {
+        margin-top: 85px;
+        font-weight: 600;
+        font-size: 31px;
+        line-height: 140%;
+        color: #000000;
+
+        @media (max-width: 490px) {
+            font-size: 25px;
+        }   
+    }
+
+    .text {
+        margin-top: 15px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 160%;
+        color: #000000;
+        opacity: 0.7;
+
+        @media (max-width: 490px) {
+            font-size: 13px;
+        }  
+        
+        @media (max-width: 420px) {
+            font-size: 10px;
+        } 
+    }
+
+    .watch-btn {
+        margin: 20px 0;
+        width: 137px;
+        height: 48px;
+        left: 836px;
+        top: 2710px;
+        background: #13AE92;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 160%;
+        color: #FFFFFF;
+        border: none;
+
+        &:hover {
+            box-shadow: 1px 1px 10px rgb(99, 98, 98);
+            cursor: pointer;
+        }   
+    }
+
+    .watch-1 {
+        display: flex;
+
+        @media (max-width: 945px) {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    .watch-2 {
+        margin-top: 50px;
+        display: flex;
+
+        @media (max-width: 945px) {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    .watch-3 {
+        display: flex;
+        margin-top: 50px;
+
+        @media (max-width: 945px) {
+            display: block;
+            text-align: center;
+        }
+    }
+}

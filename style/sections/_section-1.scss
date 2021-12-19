@@ -1,0 +1,223 @@
+.section-1 {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    background-color: #002D3A;
+    padding: 31px 220px;
+
+    @media (max-width: 1200px) {
+        padding: 31px 100px; 
+    }
+
+    @media (max-width: 850px) {
+        padding: 31px 50px; 
+    }
+
+    @media (max-width: 400px) {
+        padding: 30px; 
+    }
+
+    header {
+        .navbar img {
+            margin-top: 20px;
+        }
+        .navbar ul {
+            float: right;
+            margin-right: 20px;
+        }
+        .navbar ul li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 20px;
+        }
+        .navbar ul li a {
+            color: white;
+            font-size: 16px;
+            line-height: 160%;
+            text-decoration: none;
+        }
+
+        .checkbtn {
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 80px;
+            margin-right: 20px;
+            cursor: pointer;
+            display: none;
+
+            @media (max-width: 420px) {
+                margin-right: 0px;
+            }
+        }
+        #check {
+            display: none;
+        }
+
+        @media (max-width: 850px) {
+            .checkbtn {
+                display: block;
+                margin-top: 5px;
+            }
+            ul {
+                position: fixed;
+                width: 270px;
+                height: 100vh;
+                background: #003c4d;
+                top: 0;
+                left: -100%;
+                text-align: center;
+                transition: all 0.5s;
+                z-index: 100;
+                border-radius: 0 20px 20px 0;
+            }
+            .navbar ul li {
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+            .navbar ul li a {
+                font-size: 20px;
+            }
+            #check:checked ~ ul {
+                left: 0;
+            }   
+        }
+    }
+
+    
+
+    .sec-1__main {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: 586px) {
+            margin-top: 30px;
+            display: block;
+        }
+
+        .sec-1__left {
+            position: relative;
+            z-index: 1;
+            p {
+                &:first-child {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 140%;
+                    letter-spacing: 0.1em;
+                    color: #119786;
+                    padding-bottom: 10px;
+                }
+            }
+
+            .info {
+                padding-top: 30px;
+                padding-bottom: 40px;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 140%;
+                color: rgba(255, 255, 255, 0.7);
+
+                @media (max-width: 768px) {
+                    font-size: 12px;
+                }
+
+                @media (max-width: 666px) {
+                    font-size: 10px;
+                }
+
+                @media (max-width: 400px) {
+                    font-size: 8px;
+                }
+            }
+
+            h2 {
+                font-weight: bold;
+                font-size: 57px;
+                line-height: 120%;
+                color: white;
+
+                @media (max-width: 992px) {
+                    font-size: 40px;
+                }
+
+                @media (max-width: 620px) {
+                    font-size: 35px;
+                }
+
+                @media (max-width: 340px) {
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .sec-1__right {
+
+            .watch-1 {
+                position: relative;
+                z-index: 1;
+                width: 256px;
+
+                @media (max-width: 992px) {
+                    width: 200px;
+                }
+
+                @media (max-width: 600px) {
+                    width: 170px;
+                }
+
+                @media (max-width: 586px) {
+                    width: 150px;
+                    position: relative;
+                    top: 0;
+                    left: 50%;
+                    transform: calc(0%, -50%);
+                }
+            }
+            .line_back {
+                z-index: 0;
+                position: absolute;
+                right: 0;
+                top: 50%;
+
+                width: 646px;
+            }
+        }
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 11px 28px;
+    background-color: #13AE92;
+    color: white;
+
+    &:hover {
+        box-shadow: 1px 1px 10px rgb(99, 98, 98);
+    }
+}
+
+
+.back_sec-1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.kub {
+    position: absolute;
+    bottom: 16%;
+    right: 42%;
+    width: 100px;
+}
+
+.back_1 {
+    position: absolute;
+    bottom: 20px;
+    right: -30px;
+    width: 97px;
+}

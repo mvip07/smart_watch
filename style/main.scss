@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+@import "./sections/section-4";
+@import "./sections/section-1";
+@import "./sections/section-3";
+@import "./sections/section-5";
+@import "./sections/section-2";
