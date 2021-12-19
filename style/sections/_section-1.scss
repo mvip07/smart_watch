@@ -62,9 +62,10 @@
             }
             ul {
                 position: fixed;
-                width: 270px;
+                max-width: 270px;
+                min-width: 270px;
                 height: 100vh;
-                background: #003c4d;
+                background: #2ac3ee; //#003c4d
                 top: 0;
                 left: -100%;
                 text-align: center;
